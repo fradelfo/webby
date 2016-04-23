@@ -1,12 +1,57 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Webby</title>
+    <meta charset="utf-8">
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="/js/header.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,700,900,300,100' rel='stylesheet' type='text/css'>
+    <title>{<_>} Daddy - Hello Word!</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+<div class="row_main">
+        <header class="main">
+            <div class="logo"><a href="#">{<_>}</a></div>
+            <div class="saluto_logo saluto_opacity"><a class="saluto_logo_over">{&nbsp;Ciao! Sono <b>W</b>EBBY&nbsp;}</a></div>
+            <div class="main_menu">
+                <a class="text_animation"><b>M</b>ENU&nbsp;&nbsp; |</a>
+                <div class="ham_menu">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="-84 91 31 20.3" style="enable-background:new -84 91 31 20.3;" xml:space="preserve">
+                        <g class="tre">
+                            <path id="linea3" class="hm" d="M-81.7,94.3h26.4" />
+                        </g>
+                        <g class="due">
+                            <path id="linea2" class="hm" d="M-77.8,101.1h18.5" />
+                        </g>
+                        <g class="uno">
+                            <path id="linea1" class="hm" d="M-81.7,108.1h26.4" />
+                        </g>
+                    </svg>
+                </div>
+            </div>
+            <div class="navigazione navigazione_display">
+                <nav class="nav_over">
+                    <ul>
+                        <li>
+                            <a href="#"><b>H</b>OME</a></li>
+                        <li>
+                            <a href="#"><b>P</b>ROJECT</a></li>
+                        <li>
+                            <%= link_to "BLOG", posts_path %>
+                        <li>
+                            <a href="#"><b>I</b>NFO</a></li>
+                    </ul>
+
+                </nav>
+
+            </div>
+
+
+        </header>
+    </div>
 
 <%= yield %>
 
