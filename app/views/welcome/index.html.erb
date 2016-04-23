@@ -1,0 +1,71 @@
+<section class="show">
+        <div class="show_contenitore">
+            <div class="show_row">
+                <div class="show_contenuto">
+                    <p class="welcome"><a class="welcome" href="#"><b>W</b>ELCOME</a>
+                        <p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <section class="intro">
+        <div class="intro_contenitore">
+            <div class="row_main">
+                <h1 class="category_name"><b>P</b>ROJECT</h1>
+
+                <% @post.each do |post| %>
+                <div class="contenuto_welcome">
+                    <p class="date"><%= post.created_at.strftime("%A, %b %d") %></p>
+                    <img src="img/img_266,81w_163_52.png" />
+                    <h5><%= link_to post.title, post %></h5>
+                    <p><%= link_to post.content, post %></p>
+                </div>
+                <% end %>
+                
+            </div>
+
+    </section>
+    <section class="intro">
+        <div class="intro_contenitore">
+            <div class="row_main">
+                <h1 class="category_name"><b>B</b>LOG</h1>
+                <div class="contenuto_welcome">
+                    <img class="img_welcome" src="img/img_266,81w_163_52.png" />
+                    <h5 class="titolo_">TITLE</h5>
+                    <p>This is the seventh week in my design + front-end challenge. In this week’s tutorial I walk you through how to create a portfolio landing page design using Adobe Photoshop CC. I hope you enjoy! Checkout this weeks design video: Fonts
+                        used in this design Lust – https://typekit.com/fonts/lust Proxima Nova – https://typekit.com/fonts/proxima-nova Download the PSD…</p>
+                </div>
+                <div class="contenuto_welcome">
+                    <img class="img_welcome" src="img/img_266,81w_163_52.png" />
+                    <h5 class="titolo_">TITLE</h5>
+                    <p>This is the seventh week in my design + front-end challenge. In this week’s tutorial I walk you through how to create a portfolio landing page design using Adobe Photoshop CC. I hope you enjoy! Checkout this weeks design video: Fonts
+                        used in this design Lust – https://typekit.com/fonts/lust Proxima Nova – https://typekit.com/fonts/proxima-nova Download the PSD…</p>
+                </div>
+                <div class="contenuto_welcome">
+                    <img class="img_welcome" src="img/img_266,81w_163_52.png" />
+                    <h5 class="titolo_">TITLE</h5>
+                    <p>This is the seventh week in my design + front-end challenge. In this week’s tutorial I walk you through how to create a portfolio landing page design using Adobe Photoshop CC. I hope you enjoy! Checkout this weeks design video: Fonts
+                        used in this design Lust – https://typekit.com/fonts/lust Proxima Nova – https://typekit.com/fonts/proxima-nova Download the PSD…</p>
+                </div>
+                <div class="contenuto_welcome">
+                    <img class="img_welcome" src="img/img_266,81w_163_52.png" />
+                    <h5 class="titolo_">TITLE</h5>
+                    <p>This is the seventh week in my design + front-end challenge. In this week’s tutorial I walk you through how to create a portfolio landing page design using Adobe Photoshop CC. I hope you enjoy! Checkout this weeks design video: Fonts
+                        used in this design Lust – https://typekit.com/fonts/lust Proxima Nova – https://typekit.com/fonts/proxima-nova Download the PSD…</p>
+                </div>
+                <div class="contenuto_welcome">
+                    <img class="img_welcome" src="img/img_266,81w_163_52.png" />
+                    <h5 class="titolo_">TITLE</h5>
+                    <p>This is the seventh week in my design + front-end challenge. In this week’s tutorial I walk you through how to create a portfolio landing page design using Adobe Photoshop CC. I hope you enjoy! Checkout this weeks design video: Fonts
+                        used in this design Lust – https://typekit.com/fonts/lust Proxima Nova – https://typekit.com/fonts/proxima-nova Download the PSD…</p>
+                </div>
+
+            </div>
+
+    </section>

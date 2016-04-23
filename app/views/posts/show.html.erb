@@ -1,7 +1,61 @@
-<%= @post.title %><br>
-<%= @post.content %>
+<section class="progetto_img">
+        <div class="img-prog">
+            <img class="img_1_progetto" src="img/forest-patrol.jpg" alt="">
+        </div>
+    </section>
 
-<br>
+
+
+    <section>
+          <div class="progetto">
+           <div class="articolo">
+    <h1 class="titolo_progetto"><%= @post.title %></h1>
+    <p class="date"><%= @post.created_at.strftime('%A, %b %d') %></p>
+    <p class="contenuto_progetto"><%= simple_format @post.content %></p>
+            
+
+                <div class="gallery">
+                    <div class="img_gallery">
+                        <img class="img_gallery_1" src="img/forest-patrol.jpg" alt="" />
+                    </div>
+
+                    <div class="img_gallery">
+                        <img class="img_gallery_1" src="img/forest-patrol.jpg" alt="" />
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <section class="btn">
+        <div class="row">
+            <div class="contenitore-bottone">
+                <div class="bottom-show"><a class="show_btn"href="">Show More</a></div>
+            </div>
+        </div>
+
+    </section>
+
+    <!--altri-prog///////start-->
+
+    <section class="correlati_s">
+        <div class="row">
+            <div class="correlati">
+
+
+                <div class="col-1">
+                        <div class="primo-div">
+                            <div id="img-int"><img src="img/forest-patrol.jpg" alt=""></div>
+
+                            <h1 class="titolo_correlati">TITLE</h1>
+                            <div class "descrizione">
+                                <p class="text_correlati">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...</p>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
 <%= link_to "Edit", edit_post_path  { @post } %>
 <%= link_to "Delete", post_path{ @post }, method: :delete, data: { confirm: "sei sicuro?"} %>

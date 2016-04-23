@@ -14,7 +14,7 @@
 <body>
 <div class="row_main">
         <header class="main">
-            <div class="logo"><a href="#">{<_>}</a></div>
+            <div class="logo"> <%= link_to "{<_>}", root_path %> </div>
             <div class="saluto_logo saluto_opacity"><a class="saluto_logo_over">{&nbsp;Ciao! Sono <b>W</b>EBBY&nbsp;}</a></div>
             <div class="main_menu">
                 <a class="text_animation"><b>M</b>ENU&nbsp;&nbsp; |</a>
@@ -54,6 +54,16 @@
     </div>
 
 <%= yield %>
+
+<footer>
+        <div class="log">
+            <p>{<_>}</p>
+        </div>
+        <div class="p-foot">
+            <p>© www.webby.com</p>
+            <p>@design by Francesco Delfino/Giuseppe Stillitano</p>
+        </div>
+    </footer>
 
 </body>
 </html>

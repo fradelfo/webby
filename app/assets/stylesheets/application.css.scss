@@ -15,6 +15,7 @@ body {
     background-color: $main;
     margin: $prova;
     font-family: $font_main;
+    color: $gray;
 }
 a{
  text-decoration: none;
@@ -161,10 +162,14 @@ a{
     margin: 0 auto;
   }
   .titolo_progetto{
-    color: #000;
+    color: $gray;
     font-size: 2em;
     font-weight: 500;
     width:100%;
+  }
+  .date{
+    font-weight: 300;
+    font-size: 16px;
   }
   .contenuto_progetto{
     font-size: 1em;
