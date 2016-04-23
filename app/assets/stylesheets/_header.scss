@@ -1,0 +1,104 @@
+$main: #F7F7F7;
+$gray: #747474;
+$green: #53E7B0;
+$bg: #fff;
+$font_main: 'Lato', sans-serif;
+
+
+.main {
+    width: 100%;
+    float: left;
+    height: 75px;
+    position: fixed;
+    z-index: 100;
+    background-color: white;
+    .logo {
+        float: left;
+        width: 61px;
+        height: 26px;
+        margin-left: 2.6563364693%;
+        margin-top: 22px;
+        text-align: center;
+        animation-name: pulse;
+        animation-duration: 1s;
+        animation-timing-function: ease-in;
+        animation-iteration-count: infinite;
+        position: relative;
+        z-index: 1000;
+    }
+    .logo a {
+        text-decoration: none;
+        color: $gray;
+        font-size: 27px;
+        font-weight: 400;
+    }
+    .main_menu {
+        height: 19px;
+        width: 100px;
+        float: right;
+        margin-right: 2.6563364693%;
+        margin-top: 33px;
+        position: relative;
+        z-index: 11;
+    }
+    .text_animation {
+        font-size: 15.19px;
+        color: #747474;
+        text-decoration: none;
+        font-weight: 300;
+        cursor: pointer;
+
+
+    }
+    .ham_menu {
+        height: 19px;
+        width: 27px;
+        float: right;
+    }
+    .hm {
+        fill: none;
+        stroke: #747474;
+        stroke-width: 2;
+        stroke-linecap: square;
+        animation-name: hm_animation;
+        animation-duration: 1.5s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+    }
+}
+.navigazione_display {
+  display: none;
+}
+.navigazione {
+    z-index: 0;
+    top: 0;
+    right: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,0.7);
+    text-align: right;
+    .nav_over {
+        position: relative;
+        z-index: 100;
+        float: right;
+        width: 100%;
+    }
+    nav ul {
+        float: right;
+        width: 100%;
+        margin-top: 20%;
+        margin-right: 108px;
+        list-style: none;
+    }
+    nav ul li {
+        margin-top: 50px;
+        text-decoration: none;
+    }
+    nav ul li a {
+        text-decoration: none;
+        color: $gray;
+        font-size: 64px;
+        font-weight: 300;
+    }
+}

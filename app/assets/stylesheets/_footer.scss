@@ -1,0 +1,28 @@
+footer{
+margin-top:300px;
+height:45px;
+width: 100%;
+float: left;
+padding: 0;
+bottom: 0;
+position: relative;
+
+.log p{
+    float: left;
+    color: $gray;
+    font-size: 18px;
+    font-weight: 400;
+    margin-left: 20px;
+
+}
+
+.p-foot p{
+  float: left;
+  font-size: 12px;
+  color: $gray;
+  margin-left: 50px;
+  margin-top: 25px;
+}
+
+
+}

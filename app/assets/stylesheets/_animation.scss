@@ -1,0 +1,273 @@
+@keyframes pulse {
+    from {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+    50% {
+        -webkit-transform: scale3d(1.05, 1.05, 1.05);
+        transform: scale3d(1.05, 1.05, 1.05);
+    }
+    to {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}
+@keyframes hm_animation {
+    from {
+        stroke-dasharray: 6;
+    }
+    50% {
+        stroke-dasharray: 4;
+    }
+    to {
+        stroke-dasharray: 6;
+    }
+}
+@keyframes bg_animation {
+    from {
+        stroke-dasharray:3,6;
+    }
+    50% {
+        stroke-dasharray:1.5,3;
+    }
+    to {
+        stroke-dasharray:3,6;
+    }
+}
+@keyframes rotetex_uno {
+    from {
+        transform: rotate(0deg) translateY(0px) translatex(0px);
+        transform-origin: center;
+    }
+    50% {
+        transform: rotate(22.5deg) translateY(-2.5px) translatex(-2.5px);
+        transform-origin: center;
+    }
+    to {
+        transform: rotate(45deg) translateY(-5px) translatex(-5px);
+        transform-origin: center;
+    }
+}
+@keyframes rotetex_uno_reverse {
+    from {
+        transform: rotate(45deg) translateY(-5px) translatex(-5px);
+        transform-origin: center;
+    }
+    50% {
+        transform: rotate(22.5deg) translateY(-2.5px) translatex(-2.5px);
+        transform-origin: center;
+    }
+    to {
+        transform: rotate(0deg) translateY(0px) translatex(0px);
+        transform-origin: center;
+    }
+}
+@keyframes rotetex_tre {
+    from {
+        transform: rotate(0deg) translateY(0px) translatex(0px);
+        transform-origin: center;
+    }
+    50% {
+        transform: rotate(-22.5deg) translateY(2.5px) translatex(-2.5px);
+        transform-origin: center;
+    }
+    to {
+        transform: rotate(-45deg) translateY(5px) translatex(-5px);
+        transform-origin: center;
+    }
+}
+@keyframes rotetex_tre_reverse {
+    from {
+        transform: rotate(-45deg) translateY(5px) translatex(-5px);
+        transform-origin: center;
+    }
+    50% {
+        transform: rotate(-22.5deg) translateY(2.5px) translatex(-2.5px);
+        transform-origin: center;
+    }
+    to {
+        transform: rotate(0deg) translateY(0px) translatex(0px);
+        transform-origin: center;
+    }
+}
+@keyframes opacity {
+    from {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    to {
+        opacity: 0;
+    }
+}
+@keyframes opacity_reverse {
+    from {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@-webkit-keyframes bounceInRight {
+    60%,
+    75%,
+    90%,
+    from,
+    to {
+        -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+        animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    }
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(3000px, 0, 0);
+        transform: translate3d(3000px, 0, 0);
+    }
+    60% {
+        opacity: 1;
+        -webkit-transform: translate3d(-25px, 0, 0);
+        transform: translate3d(-25px, 0, 0);
+    }
+    75% {
+        -webkit-transform: translate3d(10px, 0, 0);
+        transform: translate3d(10px, 0, 0);
+    }
+    90% {
+        -webkit-transform: translate3d(-5px, 0, 0);
+        transform: translate3d(-5px, 0, 0);
+    }
+    to {
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+@keyframes bounceOutRight {
+    20% {
+        opacity: 1;
+        -webkit-transform: translate3d(-20px, 0, 0);
+        transform: translate3d(-20px, 0, 0);
+    }
+    to {
+        opacity: 0;
+        -webkit-transform: translate3d(2000px, 0, 0);
+        transform: translate3d(2000px, 0, 0);
+    }
+}
+@-webkit-keyframes rubberBand {
+    from {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+    30% {
+        -webkit-transform: scale3d(1.25, 0.75, 1);
+        transform: scale3d(1.25, 0.75, 1);
+    }
+    40% {
+        -webkit-transform: scale3d(0.75, 1.25, 1);
+        transform: scale3d(0.75, 1.25, 1);
+    }
+    50% {
+        -webkit-transform: scale3d(1.15, 0.85, 1);
+        transform: scale3d(1.15, 0.85, 1);
+    }
+    65% {
+        -webkit-transform: scale3d(.95, 1.05, 1);
+        transform: scale3d(.95, 1.05, 1);
+    }
+    75% {
+        -webkit-transform: scale3d(1.05, .95, 1);
+        transform: scale3d(1.05, .95, 1);
+    }
+    to {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}
+@keyframes show_1 {
+  0%{
+    opacity: 0.01;
+  }
+  50%{
+    opacity: 0.25;
+  }
+  100%{
+    opacity: 0.5;
+  }
+}
+.navigazione_bounce {
+    display: inherit;
+    animation: bounceInRight;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: even;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+}
+.navigazione_bounce_out {
+    display: inherit;
+    animation: bounceOutRight;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: even;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+}
+.uno_animated {
+    animation: rotetex_uno;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: even;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+}
+.uno_animated_reverse {
+    animation: rotetex_uno_reverse;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: even;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+}
+.tre_animated {
+    animation: rotetex_tre;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: even;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+}
+.tre_animated_reverse {
+    animation: rotetex_tre_reverse;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: even;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+}
+.due_animated {
+    animation: opacity;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: even;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+}
+.due_animated_reverse {
+    animation: opacity_reverse;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: even;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+}
+.saluto_animation {
+    animation: rubberBand;
+    animation-duration: 0.8s;
+    animation-timing-function: linear;
+    animation-iteration-count: even;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+}
