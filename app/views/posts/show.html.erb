@@ -8,11 +8,22 @@
 
     <section>
           <div class="progetto">
-           <div class="articolo">
-    <h1 class="titolo_progetto"><%= @post.title %></h1>
-    <p class="date"><%= @post.created_at.strftime('%A, %b %d') %></p>
-    <p class="contenuto_progetto"><%= simple_format @post.content %></p>
-            
+            <div class="articolo">
+                <h1 class="titolo_progetto">TITLE</h1>
+                <p class="contenuto_progetto">È la sera del 12 febbraio 1966 sui Navigli a Milano, il pavé di via Gorizia lambisce la Darsena, ancora un porto commerciale di chiatte e gru. Al civico 22 un uomo è morto e un amico non vuole dimenticarlo. Lo vuole ricordare così bene
+                    che non una ma due volte lo ritrae di profilo composto immobile nel letto. Alle 21,45, quando è appena spirato, e poi alle 23. A penna, in entrambi gli schizzi, in poche linee traccia le lenzuola rincalzate, i baffi e i capelli che
+                    sarebbero bianchi ma che l'inchiostro ritinge di nero. Il viso che spunta dal cuscino è magro e severo, il sopracciglio piccato. "Elio Vittorini è morto a Milano in viale Gorizia alle 21 e 45 del 12 febbraio 1966" scrive Albe Steiner
+                    sotto il primo disegno. Con lo sguardo essenziale del grafico, cinquant'anni fa fermava in queste due istantanee inedite l'ultima espressione di un grande del Novecento italiano. Si erano conosciuti da partigiani nel ‘43 e non si erano
+                    più lasciati. «Avevo diciott'anni e mezzo quel 12 febbraio ed Elio, che per tutta la vita avevo avuto vicino, fu la prima persona che vidi mancare» ricorda oggi Anna Steiner, nata nel ‘47, figlia di Albe (1913-1974) e Lica (1914-2008).
+                    All'indomani della ricorrenza, la memoria degli ultimi anni di Vittorini è affidata soprattutto a lei. Mentre infatti Bompiani ripubblica un'edizione arricchita di Diario in pubblico, è nell'archivio di documenti, lettere, disegni
+                    e fotografie conservato da Anna che rivive il Dopoguerra milanese dello scrittore nato a Siracusa nel 1908.È la sera del 12 febbraio 1966 sui Navigli a Milano, il pavé di via Gorizia lambisce la Darsena, ancora un porto commerciale
+                    di chiatte e gru. Al civico 22 un uomo è morto e un amico non vuole dimenticarlo. Lo vuole ricordare così bene che non una ma due volte lo ritrae di profilo composto immobile nel letto. Alle 21,45, quando è appena spirato, e poi alle
+                    23. A penna, in entrambi gli schizzi, in poche linee traccia le lenzuola rincalzate, i baffi e i capelli che sarebbero bianchi ma che l'inchiostro ritinge di nero. Il viso che spunta dal cuscino è magro e severo, il sopracciglio piccato.
+                    "Elio Vittorini è morto a Milano in viale Gorizia alle 21 e 45 del 12 febbraio 1966" scrive Albe Steiner sotto il primo disegno. Con lo sguardo essenziale del grafico, cinquant'anni fa fermava in queste due istantanee inedite l'ultima
+                    espressione di un grande del Novecento italiano. Si erano conosciuti da partigiani nel ‘43 e non si erano più lasciati. «Avevo diciott'anni e mezzo quel 12 febbraio ed Elio, che per tutta la vita avevo avuto vicino, fu la prima persona
+                    che vidi mancare» ricorda oggi Anna Steiner, nata nel ‘47, figlia di Albe (1913-1974) e Lica (1914-2008). All'indomani della ricorrenza, la memoria degli ultimi anni di Vittorini è affidata soprattutto a lei. Mentre infatti Bompiani
+                    ripubblica un'edizione arricchita di Diario in pubblico, è nell'archivio di documenti, lettere, disegni e fotografie conservato da Anna che rivive il Dopoguerra milanese dello scrittore nato a Siracusa nel 1908.</p>
+
 
                 <div class="gallery">
                     <div class="img_gallery">
@@ -55,6 +66,7 @@
             </div>
         </div>
     </section>
+
 
 
 <%= link_to "Edit", edit_post_path  { @post } %>
