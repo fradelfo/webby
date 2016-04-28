@@ -50,10 +50,12 @@ class PostsController < ApplicationController
 	def post_params
 		params.require(:post).permit(:title, :content)
 	end
-#controlla l id dei post della pagina (show.html.erb)
+
 	def find_post
 		@post = Post.find(params[:id])
 	end
+#controlla l id dei post della pagina (show.html.erb)
+	
 		
 	
 end

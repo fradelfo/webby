@@ -2,6 +2,7 @@
 @import 'header';
 @import 'footer';
 @import 'responsive';
+@import 'pygments';
 
 $main: #F7F7F7;
 $gray: #747474;
@@ -171,10 +172,11 @@ a{
     font-weight: 300;
     font-size: 16px;
   }
-  .contenuto_progetto{
-    font-size: 1em;
-  }
 }
+.contenuto_progetto{
+    font-size: 1em;
+    
+  }
 .gallery{
   float: left;
   padding: 0;
