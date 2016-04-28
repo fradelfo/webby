@@ -22,7 +22,7 @@
                 <% @post.each do |post| %>
                 <div class="contenuto_welcome">
                     <p class="date"><%= post.created_at.strftime("%A, %b %d") %></p>
-                    <img src="img/img_266,81w_163_52.png" />
+                    <%= image_tag post.image.url, class:"img_welcome"  %>
                     <h5><%= link_to post.title, post %></h5>
                     <p><%= link_to post.content, post %></p>
                 </div>
