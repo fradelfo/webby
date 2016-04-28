@@ -23,8 +23,8 @@
                 <div class="contenuto_welcome">
                     <p class="date"><%= post.created_at.strftime("%A, %b %d") %></p>
                     <%= image_tag post.image.url, class:"img_welcome"  %>
-                    <h5><%= link_to post.title, post %></h5>
-                    <p><%= link_to post.content, post %></p>
+                    <h5 class="titolo_"><%= link_to post.title, post %></h5>
+                    <p class="contenuto_"><%= link_to post.content, post %></p>
                 </div>
                 <% end %>
                 

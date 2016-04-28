@@ -101,7 +101,7 @@ a{
 
 .img_welcome {
     max-width: 100%;
-    margin-top: 10px;
+    margin-top: 2px;
 }
 .titolo_ {
     text-align: left;
@@ -169,10 +169,7 @@ a{
     font-weight: 500;
     width:100%;
   }
-  .date{
-    font-weight: 300;
-    font-size: 16px;
-  }
+
 }
 .contenuto_progetto{
     font-size: 1em;
@@ -258,6 +255,18 @@ a{
 .correlati_s{
   display: block;
   color: $gray;
+}
+
+p.date{
+    padding-bottom: 0;
+    margin-bottom: 6px;
+
+}
+
+p.contenuto_{
+  max-height: 250px;
+  overflow: scroll;
+  text-overflow: ellipsis;
 }
 
 .row{
