@@ -15,9 +15,12 @@
                 <div class="contenuto_progetto">
                 	<%= markdown @post.content %>
                 </div>
+                <%= render 'disqus' %>
+    </section>
 
 
-                <div class="gallery">
+
+            <!-- <div class="gallery">
                     <div class="img_gallery">
                         <img class="img_gallery_1" src="img/forest-patrol.jpg" alt="" />
                     </div>
@@ -26,8 +29,10 @@
                         <img class="img_gallery_1" src="img/forest-patrol.jpg" alt="" />
                     </div>
                 </div>
-            </div>
-    </section>
+            </div> -->
+    
+
+
 
     <section class="btn">
         <div class="row">
@@ -38,33 +43,8 @@
 
     </section>
 
-    <!--altri-prog///////start-->
 
-    <section class="correlati_s">
-        <div class="row">
-            <div class="correlati">
-
-            
-               
-        
-           
-
-				
-                <div class="col-1">
-                 
-                        <div class="primo-div">
-                            <div id="img-int"><img src="img/forest-patrol.jpg" alt=""></div>
-                            <h1 class="titolo_correlati"><%= @post.title %></h1>
-                <p class="date"> <%= @post.created_at.strftime('%A, %B %d') %> </p>
-                            <div class "descrizione">
-                                <p class="text_correlati"><%= @post.content %></p>
-                            </div>
-                        </div>
-                </div>
-                
-            </div>
-        </div>
-    </section>
+  
 
 
 
