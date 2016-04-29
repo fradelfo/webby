@@ -48,11 +48,11 @@ class PostsController < ApplicationController
 	private
 #definisce i parametri dei post 
 	def post_params
-		params.require(:post).permit(:title, :content, :image)
+		params.require(:post).permit(:title, :content, :image, :slug)
 	end
 
 	def find_post
-		@post = Post.find(params[:id])
+		@post = Post.friendly.find(params[:id])
 	end
 #controlla l id dei post della pagina (show.html.erb)
 	
