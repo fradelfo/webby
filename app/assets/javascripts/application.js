@@ -20,7 +20,6 @@
 //= require turbolinks
 
 
-$.turbo.use('pjax:start', 'pjax:end');
 
 $(document).ready(function(){
   $(".text_animation").click(function(){
