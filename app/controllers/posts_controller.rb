@@ -5,7 +5,7 @@ class PostsController < ApplicationController
 #richiama l'index dei post (redirect_to @post  --> richiama direttamente l'index
 
 	def index
-		@post = Post.all.order("created_at desc")
+		@post = Post.all.order("created_at desc").paginate(page: params[:page], per_page: 5)
 	end
 
 #per generare/inserire nuovi post

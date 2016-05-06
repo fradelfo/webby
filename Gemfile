@@ -32,6 +32,7 @@ gem "paperclip", "~> 5.0.0.beta1"
 gem 'jquery-turbolinks'
 
 gem 'friendly_id', '~> 5.1'
+gem 'will_paginate', '~> 3.1'
 
 
 # Use ActiveModel has_secure_password
