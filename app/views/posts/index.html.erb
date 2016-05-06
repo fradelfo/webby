@@ -1,1 +1,18 @@
-<h1>hello</h1>
+<section class="intro">
+        <div class="intro_contenitore">
+            <div class="row_main">
+                <h1 class="category_name"><b>B</b>LOG</h1>
+
+                <% @post.each do |post| %>
+                <div class="contenuto_welcome">
+                    <p class="date"><%= post.created_at.strftime("%A, %B %d") %></p>
+                    <%= image_tag post.image.url, class:"img_welcome"  %>
+                    <h5 class="titolo_"><%= link_to post.title, post %></h5>
+                    <p class="contenuto_"><%= link_to post.content, post %></p>
+                </div>
+                <% end %>
+                
+            </div>
+
+    </section>
+
